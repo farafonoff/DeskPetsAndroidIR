@@ -87,7 +87,8 @@ public class ControlAdapter extends RecyclerView.Adapter<ControlAdapter.MyViewHo
         if (position<Action.actionList.size()) {
             Action action = Action.actionList.get(position);
             holder.button.setTag(action);
-            holder.button.setText(action.name);
+            holder.button.setText(action.label);
+            holder.button.setTextSize(60);
         }
     }
 
